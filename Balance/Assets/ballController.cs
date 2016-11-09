@@ -6,7 +6,7 @@ public class ballController : MonoBehaviour
 
     Rigidbody2D rigid;
     Animator ballAnimator;
-    float speed = 2.0f;
+    float speed = 5.0f;
     Vector2 maxVel = new Vector2(20.0f, 0.0f);
 
     // Use this for initialization
@@ -33,9 +33,9 @@ public class ballController : MonoBehaviour
         {
             ballAnimator.SetBool("moving", false);
         }
-        if(Input.anyKey)
-            rigid.AddForce(new Vector2(0.0f, 15.0f));
+        //if(Input.anyKey)
+        //    rigid.AddForce(new Vector2(0.0f, 15.0f));
         if (rigid.velocity.x > 5)
-            speed = 7.0f;
+            speed = 25.0f;
     }
 }
