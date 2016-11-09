@@ -18,7 +18,7 @@ public class buttonsController : MonoBehaviour {
 	public void startNewGame()
 	{
 		clickButton ();
-		SceneManager.LoadScene("testScene");
+		SceneManager.LoadScene("gameScene");
     }
 
 	public void mainMenuOptions() {
