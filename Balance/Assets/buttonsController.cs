@@ -23,13 +23,16 @@ public class buttonsController : MonoBehaviour {
 
 	public void mainMenuOptions() {
 		clickButton ();
-	}
+        SceneManager.LoadScene("optionsScene");
+    }
 
-	public void mainMenuAbout() {
+    public void mainMenuAbout() {
 		clickButton ();
-	}
+        SceneManager.LoadScene("aboutScene");
+    }
 
-	public void mainMenuQuit() {
+    public void mainMenuQuit() {
 		clickButton ();
+        Application.Quit();
 	}
 }
