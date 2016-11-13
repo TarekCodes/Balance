@@ -16,20 +16,56 @@ Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balanc
 Loading C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.138 seconds
+- Completed reload, in  0.051 seconds
 Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.734814 ms
-UnityException: Tag: soundHandler is not defined.
-  at (wrapper managed-to-native) UnityEngine.GameObject:FindGameObjectWithTag (string)
-  at buttonsController.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+UnloadTime: 0.717826 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.739948 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 277.
+Total: 0.191209 ms (FindLiveObjects: 0.015802 ms CreateObjectMapping: 0.015012 ms MarkObjects: 0.112987 ms  DeleteObjects: 0.046222 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.401382 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 277.
+Total: 0.191604 ms (FindLiveObjects: 0.018567 ms CreateObjectMapping: 0.012246 ms MarkObjects: 0.156049 ms  DeleteObjects: 0.003950 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.596938 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 277.
+Total: 0.257185 ms (FindLiveObjects: 0.031604 ms CreateObjectMapping: 0.025283 ms MarkObjects: 0.192790 ms  DeleteObjects: 0.005530 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.476049 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 277.
+Total: 0.208197 ms (FindLiveObjects: 0.021728 ms CreateObjectMapping: 0.014617 ms MarkObjects: 0.166715 ms  DeleteObjects: 0.004345 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.727703 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 277.
+Total: 0.323950 ms (FindLiveObjects: 0.028839 ms CreateObjectMapping: 0.024493 ms MarkObjects: 0.262715 ms  DeleteObjects: 0.007111 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.292740 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 277.
+Total: 0.158024 ms (FindLiveObjects: 0.015407 ms CreateObjectMapping: 0.010666 ms MarkObjects: 0.127604 ms  DeleteObjects: 0.003160 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.700444 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 277.
+Total: 0.259555 ms (FindLiveObjects: 0.029629 ms CreateObjectMapping: 0.024098 ms MarkObjects: 0.199901 ms  DeleteObjects: 0.004740 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1c54 -> priority: 1 
-  Thread -> id: 2880 -> priority: 1 
+  Thread -> id: 31c8 -> priority: 1 
+  Thread -> id: 31cc -> priority: 1 
