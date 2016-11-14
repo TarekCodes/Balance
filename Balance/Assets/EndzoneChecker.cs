@@ -18,7 +18,7 @@ public class EndzoneChecker : MonoBehaviour {
 	void Update () {
 		if (inZone && Time.time - timer >= 3.0f) {
 			//temporarily changes to menuScene
-			SceneManager.LoadScene("gameScene");
+			SceneManager.LoadScene("level1");
 		}
 	}
 
