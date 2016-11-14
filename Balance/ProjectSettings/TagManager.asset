@@ -6,10 +6,14 @@ TagManager:
   tags:
   - newgame
   - soundHandler
+<<<<<<< HEAD
   - ramp
   - platform
   - scoreZone
   - scoreText
+=======
+  - endzone
+>>>>>>> solonBranch
   layers:
   - Default
   - TransparentFX
