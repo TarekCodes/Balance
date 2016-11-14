@@ -4,16 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - scoreText
   - newgame
   - soundHandler
-<<<<<<< HEAD
-  - ramp
   - platform
   - scoreZone
-  - scoreText
-=======
-  - endzone
->>>>>>> solonBranch
+  - ramp
   layers:
   - Default
   - TransparentFX
@@ -48,15 +44,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Invisible
-    uniqueID: 74161299
+  - name: invisible
+    uniqueID: 2172503433
     locked: 0
-  - name: Background
-    uniqueID: 1775092475
+  - name: background
+    uniqueID: 2817341273
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 1802877267
+  - name: top
+    uniqueID: 2011185587
     locked: 0

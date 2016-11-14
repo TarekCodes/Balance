@@ -30,7 +30,7 @@ public class ballController : MonoBehaviour
     void FixedUpdate()
     {
         float userInput = Input.GetAxis("Horizontal") * Time.deltaTime;
-        if ((rigid.velocity.x < maxVel.x && userInput > 0) || (rigid.velocity.x > -maxVel.x && userInput < 0))
+        if (((rigid.velocity.x < maxVel.x && userInput > 0) || (rigid.velocity.x > -maxVel.x && userInput < 0)) && isGrounded)
             rigid.velocity += new Vector2(speed * userInput, 0.0f);
         if (rigid.velocity.x > 4 || rigid.velocity.x < -4)
             ballAnimator.SetBool("moving", true);
@@ -38,8 +38,6 @@ public class ballController : MonoBehaviour
         {
             ballAnimator.SetBool("moving", false);
         }
-        //if(Input.anyKey)
-        //    rigid.AddForce(new Vector2(0.0f, 15.0f));
         if (rigid.velocity.x > 5)
             speed = 25.0f;
     }

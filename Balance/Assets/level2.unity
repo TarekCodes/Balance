@@ -153,8 +153,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 109570904}
   - 212: {fileID: 109570903}
-  - 114: {fileID: 109570902}
   - 61: {fileID: 109570901}
+  - 114: {fileID: 109570902}
   m_Layer: 0
   m_Name: Killzone1
   m_TagString: Untagged
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 109570900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e053b0a94752146e79954ce4df1b5565, type: 3}
+  m_Script: {fileID: 11500000, guid: a5d736b6db365744096eef009725f805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &109570903
@@ -337,8 +337,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 137370312}
   - 212: {fileID: 137370311}
-  - 114: {fileID: 137370310}
   - 61: {fileID: 137370309}
+  - 114: {fileID: 137370310}
   m_Layer: 0
   m_Name: Killzone1 (2)
   m_TagString: Untagged
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 137370308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e053b0a94752146e79954ce4df1b5565, type: 3}
+  m_Script: {fileID: 11500000, guid: a5d736b6db365744096eef009725f805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &137370311
@@ -661,8 +661,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2093955738}
   - 212: {fileID: 2093955737}
-  - 114: {fileID: 2093955736}
   - 61: {fileID: 2093955735}
+  - 114: {fileID: 2093955736}
   m_Layer: 0
   m_Name: Killzone1 (1)
   m_TagString: Untagged
@@ -692,7 +692,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2093955734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e053b0a94752146e79954ce4df1b5565, type: 3}
+  m_Script: {fileID: 11500000, guid: a5d736b6db365744096eef009725f805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &2093955737

@@ -16,20 +16,43 @@ Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balanc
 Loading C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.128 seconds
+- Completed reload, in  0.051 seconds
 Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.717826 ms
+UnloadTime: 1.184394 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.738368 ms
+UnloadTime: 4.963158 ms
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 294.
-Total: 0.263506 ms (FindLiveObjects: 0.016197 ms CreateObjectMapping: 0.015407 ms MarkObjects: 0.184493 ms  DeleteObjects: 0.046617 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 302.
+Total: 0.245333 ms (FindLiveObjects: 0.015802 ms CreateObjectMapping: 0.029234 ms MarkObjects: 0.154864 ms  DeleteObjects: 0.045037 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.504493 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 302.
+Total: 0.245333 ms (FindLiveObjects: 0.034370 ms CreateObjectMapping: 0.042666 ms MarkObjects: 0.164345 ms  DeleteObjects: 0.003555 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.368197 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 268.
+Total: 0.144592 ms (FindLiveObjects: 0.015802 ms CreateObjectMapping: 0.009086 ms MarkObjects: 0.111802 ms  DeleteObjects: 0.007506 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ballController.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.750221 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 302.
+Total: 0.354370 ms (FindLiveObjects: 0.029234 ms CreateObjectMapping: 0.030814 ms MarkObjects: 0.274567 ms  DeleteObjects: 0.018567 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3070 -> priority: 1 
-  Thread -> id: 1fec -> priority: 1 
+  Thread -> id: 36d8 -> priority: 1 
+  Thread -> id: 1b8c -> priority: 1 
