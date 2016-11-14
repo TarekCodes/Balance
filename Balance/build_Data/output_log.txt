@@ -16,20 +16,20 @@ Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balanc
 Loading C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.089 seconds
+- Completed reload, in  0.128 seconds
 Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\tarek\Desktop\Tarek\Work studies\reps\Balance\Balance\build_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.129481 ms
+UnloadTime: 0.717826 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.359405 ms
+UnloadTime: 4.738368 ms
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 281.
-Total: 0.234666 ms (FindLiveObjects: 0.050962 ms CreateObjectMapping: 0.017382 ms MarkObjects: 0.116543 ms  DeleteObjects: 0.048987 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 294.
+Total: 0.263506 ms (FindLiveObjects: 0.016197 ms CreateObjectMapping: 0.015407 ms MarkObjects: 0.184493 ms  DeleteObjects: 0.046617 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 32c8 -> priority: 1 
-  Thread -> id: a44 -> priority: 1 
+  Thread -> id: 3070 -> priority: 1 
+  Thread -> id: 1fec -> priority: 1 
