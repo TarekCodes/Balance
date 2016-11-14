@@ -6,8 +6,7 @@ TagManager:
   tags:
   - newgame
   - soundHandler
-  - ramp
-  - platform
+  - endzone
   layers:
   - Default
   - TransparentFX
