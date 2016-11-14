@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ballController : MonoBehaviour
 {
@@ -9,12 +10,15 @@ public class ballController : MonoBehaviour
     float speed = 5.0f;
     Vector2 maxVel = new Vector2(20.0f, 0.0f);
     bool isGrounded = true;
+    int score = 0;
+    Text scoreText;
 
     // Use this for initialization
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         ballAnimator = GetComponent<Animator>();
+        scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -48,6 +52,15 @@ public class ballController : MonoBehaviour
     {
         if (coll.gameObject.tag == "platform" || coll.gameObject.tag == "ramp")
             isGrounded = true;
+    }
 
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+
+        if (coll.gameObject.tag == "scoreZone")
+        {
+            score++;
+            scoreText.text = score + "";
+        }
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - soundHandler
   - ramp
   - platform
+  - scoreZone
+  - scoreText
   layers:
   - Default
   - TransparentFX
