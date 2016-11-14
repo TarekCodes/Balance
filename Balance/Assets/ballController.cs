@@ -8,6 +8,7 @@ public class ballController : MonoBehaviour
     Animator ballAnimator;
     float speed = 5.0f;
     Vector2 maxVel = new Vector2(20.0f, 0.0f);
+    bool isGrounded = true;
 
     // Use this for initialization
     void Start()
@@ -25,7 +26,7 @@ public class ballController : MonoBehaviour
     void FixedUpdate()
     {
         float userInput = Input.GetAxis("Horizontal") * Time.deltaTime;
-        if ((rigid.velocity.x < maxVel.x && userInput > 0) || (rigid.velocity.x > -maxVel.x && userInput < 0))
+        if (((rigid.velocity.x < maxVel.x && userInput > 0) || (rigid.velocity.x > -maxVel.x && userInput < 0)) && isGrounded)
             rigid.velocity += new Vector2(speed * userInput, 0.0f);
         if (rigid.velocity.x > 4 || rigid.velocity.x < -4)
             ballAnimator.SetBool("moving", true);
@@ -33,9 +34,20 @@ public class ballController : MonoBehaviour
         {
             ballAnimator.SetBool("moving", false);
         }
-        //if(Input.anyKey)
-        //    rigid.AddForce(new Vector2(0.0f, 15.0f));
         if (rigid.velocity.x > 5)
             speed = 25.0f;
+    }
+
+    void OnCollisionExit2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "ramp")
+            isGrounded = false;
+    }
+
+    void OnCollisionStay2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "platform" || coll.gameObject.tag == "ramp")
+            isGrounded = true;
+
     }
 }
