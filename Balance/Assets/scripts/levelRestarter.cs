@@ -2,13 +2,13 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class level1Restarter : MonoBehaviour {
+public class levelRestarter : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene("level1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
