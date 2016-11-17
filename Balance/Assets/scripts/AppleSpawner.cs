@@ -16,8 +16,8 @@ public class AppleSpawner : MonoBehaviour {
 
     void spawnApple()
     {
-        float x = Random.Range(-5.5f, 5.2f);
-        float y = Random.Range(-0.5f, 4.5f);
+        float x = Random.Range(-13f, 13f);
+        float y = Random.Range(0f, 10f);
         Vector3 pos = new Vector3(x, y, 0);
         Instantiate(apple, pos, Quaternion.identity);
     }

@@ -10,7 +10,7 @@ public class AppleInBounds : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (transform.position.y < -6)
+        if (transform.position.y < -11)
             Destroy(this.gameObject);
 	}
 }

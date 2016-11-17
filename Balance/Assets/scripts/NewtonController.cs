@@ -4,7 +4,7 @@ using System.Collections;
 public class NewtonController : MonoBehaviour {
 
     Rigidbody2D rigid;
-    float speed = 6.0f;
+    float speed = 7.0f;
     bool left = false;
     int score = 0;
 	// Use this for initialization
