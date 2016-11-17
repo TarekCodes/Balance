@@ -10,6 +10,9 @@ TagManager:
   - platform
   - scoreZone
   - ramp
+  - endGame
+  - endzone
+  - apple
   layers:
   - Default
   - TransparentFX
