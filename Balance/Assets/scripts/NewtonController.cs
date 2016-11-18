@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class NewtonController : MonoBehaviour {
 
@@ -7,10 +8,12 @@ public class NewtonController : MonoBehaviour {
     float speed = 7.0f;
     bool left = false;
     int score = 0;
+    Text scoreText;
 	// Use this for initialization
 	void Start () {
         if (rigid == null)
             rigid = GetComponent<Rigidbody2D>();
+        scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
@@ -43,7 +46,7 @@ public class NewtonController : MonoBehaviour {
         {
             Destroy(other.gameObject);
             score++;
-            print(score);
+            scoreText.text = score + "";
         }
     }
 
