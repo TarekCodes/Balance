@@ -10,7 +10,7 @@ namespace UnityStandardAssets._2D
         {
             if (other.tag == "Player")
             {
-				SceneManager.LoadScene("level1");
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
     }
