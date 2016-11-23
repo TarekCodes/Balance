@@ -86,7 +86,7 @@ public class projectileController : MonoBehaviour {
             mouseWorldPoint = rayToMouse.GetPoint(maxStretch);
         }
         mouseWorldPoint.z = 0f;
-        print(mouseWorldPoint);
+        //print(mouseWorldPoint);
         transform.position = mouseWorldPoint;
     }
     void LineRendererUpdate()
