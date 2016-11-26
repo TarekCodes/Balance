@@ -13,6 +13,7 @@ TagManager:
   - endGame
   - endzone
   - apple
+  - mountain
   layers:
   - Default
   - TransparentFX
