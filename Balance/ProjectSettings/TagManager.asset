@@ -16,6 +16,7 @@ TagManager:
   - mountain
   - whenPaused
   - whenResumed
+  - powerUp
   layers:
   - Default
   - TransparentFX

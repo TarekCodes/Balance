@@ -3,15 +3,17 @@ using System.Collections;
 
 public class RockCollider : MonoBehaviour {
 
+    float initSpeed = 15f;
+    float speed = 7f;
 	// Use this for initialization
 	void Start () {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(15f, 0);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(initSpeed, 0);
     }
 
     // Update is called once per frame
     void Update () {
-        if (GetComponent<Rigidbody2D>().velocity.x < 15f)
-            GetComponent<Rigidbody2D>().velocity = new Vector2(9f, 0);
+        if (GetComponent<Rigidbody2D>().velocity.x < initSpeed)
+            GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
 
     }
 

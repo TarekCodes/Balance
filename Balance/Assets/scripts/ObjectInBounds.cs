@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AppleInBounds : MonoBehaviour {
+public class ObjectInBounds : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
