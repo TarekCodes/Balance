@@ -35,6 +35,7 @@ public class Ball_Controller_level3: MonoBehaviour
 	{
 		float userInput = Input.GetAxis("Horizontal") * Time.deltaTime;
 
+
 		if (((rigid.velocity.x < maxVel.x && userInput > 0) || (rigid.velocity.x > -maxVel.x && userInput < 0)) && isGrounded)
 			rigid.velocity += new Vector2(speed * userInput, 0.0f);
 		if (rigid.velocity.x > 4 || rigid.velocity.x < -4)
@@ -44,8 +45,8 @@ public class Ball_Controller_level3: MonoBehaviour
 			ballAnimator.SetBool("moving", false);
 		}
 
-		if (rigid.velocity.x > 5)
-			speed = 25.0f;
+		//if (rigid.velocity.x > 5)
+			//speed = 25.0f;
 
 
 		wind = Random.Range (0.0f, 1.0f);
