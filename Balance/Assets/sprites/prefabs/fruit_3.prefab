@@ -24,7 +24,7 @@ GameObject:
   - 50: {fileID: 50000014044347068}
   m_Layer: 0
   m_Name: fruit_3
-  m_TagString: Untagged
+  m_TagString: fruits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

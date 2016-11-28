@@ -7,7 +7,7 @@ public class Ball_Controller_level3: MonoBehaviour
 
 	Rigidbody2D rigid;
 	Animator ballAnimator;
-	public float speed = 5.0f;
+	float speed = 5.0f;
 	Vector2 maxVel = new Vector2(20.0f, 0.0f);
 	bool isGrounded = false;
 
@@ -15,7 +15,7 @@ public class Ball_Controller_level3: MonoBehaviour
 	public float direction;
 
 	int score = 0;
-	Text scoreText;
+	Text scoreText, speedText;
 
 	//int score = 0;
 	//Text scoreText;
@@ -26,6 +26,8 @@ public class Ball_Controller_level3: MonoBehaviour
 		rigid = GetComponent<Rigidbody2D>();
 		ballAnimator = GetComponent<Animator>();
 		scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
+		speedText = GameObject.FindGameObjectWithTag("speedText").GetComponent<Text>();
+
 	}
 
 	// Update is called once per frame
@@ -91,6 +93,9 @@ public class Ball_Controller_level3: MonoBehaviour
 			Destroy(other.gameObject);
 			score++;
 			scoreText.text = score + "";
+
+			speed = (float)speed + 0.1f;
+			speedText.text = (float)speed + "";
 		}
 	}
 		

@@ -18,6 +18,7 @@ TagManager:
   - whenResumed
   - powerUp
   - fruits
+  - speedText
   layers:
   - Default
   - TransparentFX
