@@ -17,6 +17,7 @@ TagManager:
   - whenPaused
   - whenResumed
   - powerUp
+  - fruits
   layers:
   - Default
   - TransparentFX

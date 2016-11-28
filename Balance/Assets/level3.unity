@@ -655,7 +655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065aa1770dc0b4c7f8744ac833d56580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruits: []
   fruit_0: {fileID: 1000010634473010, guid: c50406bcdf280498bb706ea213d4c3f2, type: 2}
   fruit_1: {fileID: 1000013076418414, guid: aba08b23c9c354154b5e2daf9e422bf2, type: 2}
   fruit_2: {fileID: 1000012974434048, guid: 414e00cc8aaa649c291c44f3c1b46878, type: 2}
@@ -1185,15 +1184,15 @@ RectTransform:
   m_GameObject: {fileID: 1728037831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1357674681}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0.081, y: 0.7744417}
-  m_AnchorMax: {x: 0.162, y: 0.818}
-  m_AnchoredPosition: {x: 2.000061, y: -2.000061}
-  m_SizeDelta: {x: 9, y: 4}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 650, y: 330}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1728037833
 MonoBehaviour:
@@ -1207,7 +1206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.48965526, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.1764706, g: 0.29803923, b: 0.74509805, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1216,7 +1215,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0

@@ -14,6 +14,9 @@ public class Ball_Controller_level3: MonoBehaviour
 	public float wind;
 	public float direction;
 
+	int score = 0;
+	Text scoreText;
+
 	//int score = 0;
 	//Text scoreText;
 
@@ -22,7 +25,7 @@ public class Ball_Controller_level3: MonoBehaviour
 	{
 		rigid = GetComponent<Rigidbody2D>();
 		ballAnimator = GetComponent<Animator>();
-		//scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
+		scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
 	}
 
 	// Update is called once per frame
@@ -80,16 +83,15 @@ public class Ball_Controller_level3: MonoBehaviour
 			isGrounded = true;
 	}
 
-	/*
-	void OnTriggerEnter2D(Collider2D coll)
-	{
 
-		if (coll.gameObject.tag == "scoreZone")
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.tag == "fruits")
 		{
+			Destroy(other.gameObject);
 			score++;
 			scoreText.text = score + "";
 		}
 	}
-
-	*/
+		
 }
