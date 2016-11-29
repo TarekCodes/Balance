@@ -4,15 +4,13 @@ using System.Collections;
 
 public class buttonsController : MonoBehaviour {
 
-	public GameObject soundHandler;
 
 	void Start() {
 			
-		soundHandler = GameObject.FindGameObjectWithTag ("soundHandler");
 	}
 
 	public void clickButton() {
-		soundHandler.GetComponent<SoundPlayer> ().playMenuSelect();
+		GameManager.instance.playMenuSelect();
 	}
 
 	public void startNewGame()
