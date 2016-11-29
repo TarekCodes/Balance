@@ -19,6 +19,7 @@ TagManager:
   - powerUp
   - fruits
   - speedText
+  - pauseMenu
   layers:
   - Default
   - TransparentFX
