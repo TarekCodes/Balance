@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ballController : MonoBehaviour
 {
@@ -10,15 +11,19 @@ public class ballController : MonoBehaviour
     float speed = 5.0f;
     Vector2 maxVel = new Vector2(20.0f, 0.0f);
     bool isGrounded = true;
-    int score = 0;
     Text scoreText;
+    Text velocityText;
+    AudioSource swishSound;
 
     // Use this for initialization
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         ballAnimator = GetComponent<Animator>();
+        swishSound = GetComponent<AudioSource>();
         scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
+        velocityText = GameObject.FindGameObjectWithTag("speedText").GetComponent<Text>();
+        scoreText.text = GameManager.instance.getLevelScore(SceneManager.GetActiveScene().name) + "";
     }
 
     // Update is called once per frame
@@ -40,6 +45,9 @@ public class ballController : MonoBehaviour
         }
         if (rigid.velocity.x > 5)
             speed = 25.0f;
+        velocityText.text = ((int)(rigid.velocity.magnitude * 2.237))+ "";
+        if (GameManager.instance.getLevelScore(SceneManager.GetActiveScene().name) == 4)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void OnCollisionExit2D(Collision2D coll)
@@ -59,8 +67,9 @@ public class ballController : MonoBehaviour
 
         if (coll.gameObject.tag == "scoreZone")
         {
-            score++;
-            scoreText.text = score + "";
+            swishSound.Play();
+            GameManager.instance.incrementLevelScore(SceneManager.GetActiveScene().name, 1);
+            scoreText.text = GameManager.instance.getLevelScore(SceneManager.GetActiveScene().name) + "";
         }
     }
 }

@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 	AudioSource background;
 	AudioSource menuSelect;
     private int overallScore = 0;
+    private int level1Score = 0;
 
 
 	// Use this for initialization
@@ -50,20 +51,54 @@ public class GameManager : MonoBehaviour {
         return instance;
     }
 
+    //increment overall score
     public void incrementScore()
     {
         overallScore++;
     }
 
+    //add n to overall score
     public void incrementScore(int n)
     {
         overallScore+=n;
     }
 
+    //decrement overall score
     public void decrementScore()
     {
         overallScore--;
     }
 
+    //use to increment individual level score
+    public void incrementLevelScore(string level, int n)
+    {
+        switch (level)
+        {
+            case "level1":
+                level1Score+=n;
+                break;
+        }
+    }
 
+    //use to decrement individual level score
+    public void decrementLevelScore(string level, int n)
+    {
+        switch (level)
+        {
+            case "level1":
+                level1Score -= n;
+                break;
+        }
+    }
+
+    //returns individual level scores
+    public int getLevelScore(string level)
+    {
+        switch (level)
+        {
+            case "level1":
+                return level1Score;
+        }
+        return 0;
+    }
 }

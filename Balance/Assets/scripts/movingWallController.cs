@@ -22,6 +22,5 @@ public class movingWallController : MonoBehaviour {
         if (transform.position.y < -15)
             speed = Mathf.Abs(speed);
         rigid.velocity = new Vector2(0, speed);
-        print(transform.position.y + " " + speed);
     }
 }
