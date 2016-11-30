@@ -567,7 +567,7 @@ ParticleSystem:
   moveWithTransform: 1
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: -1665373786
+  randomSeed: 357616709
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -607,7 +607,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     startSpeed:
-      scalar: 8
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -733,7 +733,7 @@ ParticleSystem:
       maxColor: {r: 0.92156863, g: 0.9254902, b: 0.43529412, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 3
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -950,9 +950,9 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 2
     enabled: 1
-    type: 12
+    type: 4
     radius: 1
-    angle: 25
+    angle: 12
     length: 5
     boxX: 1
     boxY: 1
@@ -2325,8 +2325,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 452443067}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 532.1, y: 199.6, z: -10}
-  m_LocalScale: {x: 7.507639, y: 2.4749956, z: 1}
+  m_LocalPosition: {x: 531.98, y: 199.4, z: -10}
+  m_LocalScale: {x: 2.4141753, y: 0.7850157, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2572,7 +2572,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 20.13375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2594,7 +2594,7 @@ Transform:
   m_GameObject: {fileID: 863411409}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 495.8, y: 216.1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4.0679297, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
