@@ -4,7 +4,7 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance = null;
-	AudioSource[] audioSources;
+	public AudioSource[] audioSources;
 	AudioSource background;
 	AudioSource menuSelect;
     private int overallScore = 0;
@@ -100,5 +100,11 @@ public class GameManager : MonoBehaviour {
                 return level1Score;
         }
         return 0;
+    }
+
+    public void changeVolume(float value)
+    {
+        foreach (AudioSource audioS in instance.audioSources)
+            audioS.volume = value;
     }
 }

@@ -81,4 +81,12 @@ public class SceneController : MonoBehaviour
         //GameManager.instance.playMenuSelect();
         Application.Quit();
     }
+
+    public void muteVolume(bool check)
+    {
+        if (check)
+            GameManager.instance.changeVolume(0);
+        else
+            GameManager.instance.changeVolume(1);
+    }
 }

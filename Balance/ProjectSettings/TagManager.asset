@@ -21,6 +21,7 @@ TagManager:
   - speedText
   - pauseMenu
   - gate
+  - slider
   layers:
   - Default
   - TransparentFX
