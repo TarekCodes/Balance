@@ -2493,7 +2493,7 @@ Prefab:
     - target: {fileID: 114000013125480272, guid: 969fdfe51186429499231b74a6dc99d7,
         type: 2}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000013125480272, guid: 969fdfe51186429499231b74a6dc99d7,
         type: 2}
@@ -2518,11 +2518,15 @@ Prefab:
     - target: {fileID: 114000013125480272, guid: 969fdfe51186429499231b74a6dc99d7,
         type: 2}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000013125480272, guid: 969fdfe51186429499231b74a6dc99d7,
         type: 2}
       propertyPath: m_IsOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012241363840, guid: 969fdfe51186429499231b74a6dc99d7, type: 2}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

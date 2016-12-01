@@ -49,4 +49,10 @@ public class ChooseLevel : MonoBehaviour {
         GameManager.instance.playMenuSelect();
         SceneManager.LoadScene("level6");
     }
+
+    public void backToMenu()
+    {
+        GameManager.instance.playMenuSelect();
+        SceneManager.LoadScene("menuScene");
+    }
 }

@@ -9,7 +9,7 @@ public class OptionsManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         soundSlider = GameObject.FindGameObjectWithTag("slider").GetComponent<Slider>();
-        soundSlider.value = GameManager.instance.audioSources[0].volume;
+        soundSlider.value = GameManager.instance.getVolume();
 	}
 	
 	// Update is called once per frame

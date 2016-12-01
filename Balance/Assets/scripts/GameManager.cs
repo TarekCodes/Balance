@@ -107,4 +107,9 @@ public class GameManager : MonoBehaviour {
         foreach (AudioSource audioS in instance.audioSources)
             audioS.volume = value;
     }
+
+    public float getVolume()
+    {
+        return audioSources[0].volume;
+    }
 }

@@ -11,6 +11,7 @@ public class SceneController : MonoBehaviour
     GameObject enemy;
     GameObject player;
     int levelIndex;
+    private float tempVolume;
 
 
     void Start()
@@ -71,6 +72,7 @@ public class SceneController : MonoBehaviour
 
     public void goToMenu()
     {
+        Time.timeScale = 1;
         GameManager.instance.playMenuSelect();
         SceneManager.LoadScene("menuScene");
     }
@@ -84,8 +86,11 @@ public class SceneController : MonoBehaviour
     public void muteVolume(bool check)
     {
         if (check)
+        {
+            tempVolume = GameManager.instance.getVolume();
             GameManager.instance.changeVolume(0);
+        }
         else
-            GameManager.instance.changeVolume(1);
+            GameManager.instance.changeVolume(tempVolume);
     }
 }
