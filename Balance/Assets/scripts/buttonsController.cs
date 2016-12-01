@@ -33,4 +33,10 @@ public class buttonsController : MonoBehaviour {
 		clickButton ();
         Application.Quit();
 	}
+
+    public void mainMenuHighscores()
+    {
+        clickButton();
+        SceneManager.LoadScene("highscoresScene");
+    }
 }
