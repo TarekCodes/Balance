@@ -33,11 +33,10 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    //Gamemanger methods are commented out for now because you gotta run each level from the menu scene if you want them to work.
 
     void showMenu()
     {
-        //GameManager.instance.playMenuSelect();
+        GameManager.instance.playMenuSelect();
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         paused = true;
@@ -45,7 +44,7 @@ public class SceneController : MonoBehaviour
 
     void resumeGame()
     {
-        //GameManager.instance.playMenuSelect();
+        GameManager.instance.playMenuSelect();
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         paused = false;
@@ -66,19 +65,19 @@ public class SceneController : MonoBehaviour
 
     public void restartLevel()
     {
-        //GameManager.instance.playMenuSelect();
+        GameManager.instance.playMenuSelect();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void goToMenu()
     {
-        //GameManager.instance.playMenuSelect();
+        GameManager.instance.playMenuSelect();
         SceneManager.LoadScene("menuScene");
     }
 
     public void quitGame()
     {
-        //GameManager.instance.playMenuSelect();
+        GameManager.instance.playMenuSelect();
         Application.Quit();
     }
 
