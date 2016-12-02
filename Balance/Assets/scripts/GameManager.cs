@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour {
 	AudioSource menuSelect;
     private int overallScore = 0;
     private int level1Score = 0;
+    private int level2Score = 0;
+    private int level3Score = 0;
+    private int level4Score = 0;
+    private int level5Score = 0;
+    private int level6Score = 0;
     private bool stopSaving = false;
     private static int MAX_SCORES = 10;
     public string scoreKey = "HighScore";
@@ -85,6 +90,21 @@ public class GameManager : MonoBehaviour {
             case "level1":
                 level1Score+=n;
                 break;
+            case "level2":
+                level2Score += n;
+                break;
+            case "level3":
+                level3Score += n;
+                break;
+            case "level4":
+                level4Score += n;
+                break;
+            case "level5":
+                level5Score += n;
+                break;
+            case "level6":
+                level6Score += n;
+                break;
         }
     }
 
@@ -96,6 +116,21 @@ public class GameManager : MonoBehaviour {
             case "level1":
                 level1Score -= n;
                 break;
+            case "level2":
+                level2Score -= n;
+                break;
+            case "level3":
+                level3Score -= n;
+                break;
+            case "level4":
+                level4Score -= n;
+                break;
+            case "level5":
+                level5Score -= n;
+                break;
+            case "level6":
+                level6Score -= n;
+                break;
         }
     }
 
@@ -106,6 +141,16 @@ public class GameManager : MonoBehaviour {
         {
             case "level1":
                 return level1Score;
+            case "level2":
+                return level2Score;
+            case "level3":
+                return level3Score;
+            case "level4":
+                return level4Score;
+            case "level5":
+                return level5Score;
+            case "level6":
+                return level6Score;
         }
         return 0;
     }
@@ -120,6 +165,7 @@ public class GameManager : MonoBehaviour {
     {
         return audioSources[0].volume;
     }
+
 
     public void setName()
     {
@@ -137,6 +183,7 @@ public class GameManager : MonoBehaviour {
         }
 
     }
+
 
     public void saveScore()
     {

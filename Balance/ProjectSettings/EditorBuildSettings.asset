@@ -29,3 +29,5 @@ EditorBuildSettings:
     path: Assets/level5.unity
   - enabled: 1
     path: Assets/level6.unity
+  - enabled: 1
+    path: Assets/savingScene.unity
