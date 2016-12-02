@@ -22,6 +22,8 @@ TagManager:
   - pauseMenu
   - gate
   - slider
+  - nameField
+  - initCanvas
   layers:
   - Default
   - TransparentFX

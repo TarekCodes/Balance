@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -9,9 +11,15 @@ public class GameManager : MonoBehaviour {
 	AudioSource menuSelect;
     private int overallScore = 0;
     private int level1Score = 0;
+    private bool stopSaving = false;
+    private static int MAX_SCORES = 10;
+    public string scoreKey = "HighScore";
+    public string nameKey = "HighScoreName";
+    private string playerName;
+    public GameObject enterYourName;
 
 
-	// Use this for initialization
+    // Use this for initialization
     void Awake()
     {
         if (instance == null)
@@ -111,5 +119,65 @@ public class GameManager : MonoBehaviour {
     public float getVolume()
     {
         return audioSources[0].volume;
+    }
+
+    public void setName()
+    {
+        instance.playMenuSelect();
+        Text nameField = GameObject.FindGameObjectWithTag("nameField").GetComponent<Text>();
+        if(nameField.text == "")
+        {
+            Object obj = Instantiate(enterYourName,  GameObject.FindGameObjectWithTag("initCanvas").GetComponent<Transform>(),false);
+            Destroy(obj, 2);
+        }
+        else
+        {
+            playerName = nameField.text;
+            SceneManager.LoadScene("menuScene");
+        }
+
+    }
+
+    public void saveScore()
+    {
+        int pScore = overallScore;
+        string pName = playerName;
+
+        for (int i = 0; i < MAX_SCORES; i++)
+        {
+            string curNameKey = (nameKey + i).ToString();
+            string curScoreKey = (scoreKey + i).ToString();
+
+            if (!(PlayerPrefs.HasKey(curScoreKey)))
+            {
+                if (stopSaving)
+                    break;
+                PlayerPrefs.SetInt(curScoreKey, pScore);
+                PlayerPrefs.SetString(curNameKey, pName);
+                stopSaving = true;
+            }
+            else
+            {
+                int score = PlayerPrefs.GetInt(curScoreKey);
+
+
+                if (pScore > score)
+                {
+                    int tempScore = score;
+                    string tempName = PlayerPrefs.GetString(curNameKey);
+
+                    PlayerPrefs.SetInt(curScoreKey, pScore);
+                    PlayerPrefs.SetString(curNameKey, pName);
+
+                    pName = tempName;
+                    pScore = tempScore;
+                    stopSaving = false;
+                }
+            }
+        }
+        //for (int i = 0; i < MAX_SCORES; i++)
+        //{
+        //    print(PlayerPrefs.GetString("HighScoreName" + i) + " " + PlayerPrefs.GetInt("HighScore" + i));
+        //}
     }
 }
