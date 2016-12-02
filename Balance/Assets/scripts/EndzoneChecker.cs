@@ -9,9 +9,14 @@ public class EndzoneChecker : MonoBehaviour {
 	bool inZone;
 	bool timerActive;
 	Text timerText;
+	GameManager gameManager;
+	GameObject completePopup;
 
 	// Use this for initialization
 	void Start () {
+		completePopup.SetActive (false);
+		gameManager = GameObject.Find ("GameManager").GetComponent<GameManager>();
+		completePopup = GameObject.Find ("LevelCompletePopup");
 		inZone = false;
 		timerActive = false;
 		timerText = GameObject.FindGameObjectWithTag ("timerText").GetComponent<Text> ();
@@ -48,7 +53,9 @@ public class EndzoneChecker : MonoBehaviour {
 	}
 
 	void LevelComplete() {
-		SceneManager.LoadScene ("level3");
+		gameManager.incrementLevelScore ("level2", 5);
+		completePopup.SetActive (true);
+		Time.timeScale = 0;
 	}
 
 	void UpdateTimer() {
