@@ -8,7 +8,11 @@ public class levelRestarter : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+			restart ();
+		}
     }
+
+	public void restart() {
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
 }

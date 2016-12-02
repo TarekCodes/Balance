@@ -24,6 +24,7 @@ TagManager:
   - slider
   - nameField
   - initCanvas
+  - timerText
   layers:
   - Default
   - TransparentFX
