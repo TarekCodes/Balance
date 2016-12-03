@@ -3,6 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - scoreText
   - newgame
@@ -29,6 +30,9 @@ TagManager:
   - backboard
   - rock
   - wall3
+=======
+  tags: []
+>>>>>>> eda7390fc9eae79807883be4dcb8222732fb12f4
   layers:
   - Default
   - TransparentFX
@@ -63,18 +67,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: invisible
-    uniqueID: 2172503433
-    locked: 0
-  - name: background
-    uniqueID: 2817341273
-    locked: 0
-  - name: foreground
-    uniqueID: 1757422295
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: top
-    uniqueID: 2011185587
     locked: 0

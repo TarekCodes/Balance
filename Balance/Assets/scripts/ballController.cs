@@ -31,7 +31,7 @@ public class ballController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+		
     }
 
     void FixedUpdate()
@@ -61,8 +61,10 @@ public class ballController : MonoBehaviour
     void OnCollisionStay2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "platform" || coll.gameObject.tag == "ramp")
-            isGrounded = true;
-    }
+    		isGrounded = true;
+		if (coll.gameObject.tag == "icePlatform")
+			isGrounded = true;
+	}
 
     void OnTriggerEnter2D(Collider2D coll)
     {
