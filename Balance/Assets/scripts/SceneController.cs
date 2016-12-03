@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿    using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -45,10 +45,12 @@ public class SceneController : MonoBehaviour
 
     void resumeGame()
     {
-        if(paused)
+        if (paused)
+        {
             GameManager.instance.playMenuSelect();
-        pauseMenu.SetActive(false);
-        Time.timeScale = 1;
+            Time.timeScale = 1;
+        }
+        pauseMenu.SetActive(false);    
         paused = false;
     }
 
