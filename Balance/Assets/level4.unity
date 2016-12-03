@@ -295,7 +295,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2122463863
+  m_SortingLayerID: -366014691
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e292009a5ed0d9c428c62f57dad45363, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -386,7 +386,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_SortingLayerID: 2011185587
+  m_SortingLayerID: -916767189
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &885696992
@@ -661,6 +661,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 212000010786099622, guid: 969fdfe51186429499231b74a6dc99d7,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -916767189
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 969fdfe51186429499231b74a6dc99d7, type: 2}
   m_IsPrefabParent: 0
@@ -712,7 +717,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1477626023
+  m_SortingLayerID: -612599041
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a387862377beff04f9f6ad3a5d44189a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

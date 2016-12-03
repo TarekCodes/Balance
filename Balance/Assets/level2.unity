@@ -160,7 +160,7 @@ Prefab:
     - target: {fileID: 212000010786099622, guid: 969fdfe51186429499231b74a6dc99d7,
         type: 2}
       propertyPath: m_SortingLayerID
-      value: 2011185587
+      value: -916767189
       objectReference: {fileID: 0}
     - target: {fileID: 4000013943700274, guid: 969fdfe51186429499231b74a6dc99d7, type: 2}
       propertyPath: m_LocalScale.z
@@ -825,7 +825,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_SortingLayerID: 2011185587
+  m_SortingLayerID: -916767189
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &485056459
