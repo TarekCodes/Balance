@@ -45,7 +45,8 @@ public class SceneController : MonoBehaviour
 
     void resumeGame()
     {
-        GameManager.instance.playMenuSelect();
+        if(paused)
+            GameManager.instance.playMenuSelect();
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         paused = false;
