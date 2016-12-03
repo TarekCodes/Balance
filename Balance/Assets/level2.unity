@@ -160,7 +160,7 @@ Prefab:
     - target: {fileID: 212000010786099622, guid: 969fdfe51186429499231b74a6dc99d7,
         type: 2}
       propertyPath: m_SortingLayerID
-      value: -916767189
+      value: 82271457
       objectReference: {fileID: 0}
     - target: {fileID: 4000013943700274, guid: 969fdfe51186429499231b74a6dc99d7, type: 2}
       propertyPath: m_LocalScale.z
@@ -740,6 +740,7 @@ GameObject:
   - 114: {fileID: 485056457}
   - 114: {fileID: 485056456}
   - 114: {fileID: 485056460}
+  - 114: {fileID: 485056461}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -800,7 +801,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_SortingLayerID: -916767189
+  m_SortingLayerID: 82271457
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &485056459
@@ -817,6 +818,7 @@ RectTransform:
   - {fileID: 581204757}
   - {fileID: 1429238155}
   - {fileID: 1166419413}
+  - {fileID: 1852256688}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_AnchorMin: {x: 0, y: 0}
@@ -833,6 +835,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b5b5a5c6caf6c34d87c2ef8404539a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &485056461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 485056455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c98bd846badd2442bf2bc5497a425bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &581204756
@@ -1321,6 +1334,99 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb9e8a0cae65dd449b2b506a298fed42, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1852256688 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+    type: 2}
+  m_PrefabInternal: {fileID: 1858273011}
+--- !u!1001 &1858273011
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 485056459}
+    m_Modifications:
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 183.73637
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 183.73637
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 183.73637
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000010249675082, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 82271457
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011412523270, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Text
+      value: Friction
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011083769830, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Some surfaces have properties that make moving on them different from
+        other surfaces. For example, an Icy surface is very slippery, so we say that
+        it has low friction, which means that objects will slide on them when they''re
+        moving. For this level, try to get the ball to stay in the box for 3 seconds,
+        being careful of the icy platforms. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012008391788, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012008391788, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 485056461}
+    - target: {fileID: 114000012008391788, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: startGame
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1932422646
 GameObject:
