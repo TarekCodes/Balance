@@ -14,13 +14,15 @@ public class ballController : MonoBehaviour
     Text scoreText;
     Text velocityText;
     AudioSource swishSound;
+    AudioSource backboard;
 
     // Use this for initialization
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         ballAnimator = GetComponent<Animator>();
-        swishSound = GetComponent<AudioSource>();
+        swishSound = GetComponents<AudioSource>()[0];
+        backboard = GetComponents<AudioSource>()[1];
         scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
         velocityText = GameObject.FindGameObjectWithTag("speedText").GetComponent<Text>();
         scoreText.text = GameManager.instance.getLevelScore(SceneManager.GetActiveScene().name) + "";
@@ -71,5 +73,12 @@ public class ballController : MonoBehaviour
             GameManager.instance.incrementLevelScore(SceneManager.GetActiveScene().name, 1);
             scoreText.text = GameManager.instance.getLevelScore(SceneManager.GetActiveScene().name) + "";
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "backboard")
+            backboard.Play();
+
     }
 }

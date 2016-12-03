@@ -23,4 +23,11 @@ public class movingWallController : MonoBehaviour {
             speed = Mathf.Abs(speed);
         rigid.velocity = new Vector2(0, speed);
     }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "Player")
+            GetComponent<AudioSource>().Play();
+
+    }
 }

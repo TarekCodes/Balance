@@ -26,6 +26,7 @@ TagManager:
   - initCanvas
   - wall1
   - wall2
+  - backboard
   layers:
   - Default
   - TransparentFX
