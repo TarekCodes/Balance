@@ -16,7 +16,7 @@ public class buttonsController : MonoBehaviour {
 	public void startNewGame()
 	{
 		clickButton ();
-		SceneManager.LoadScene("level1");
+		SceneManager.LoadScene("chooseLevel");
     }
 
 	public void mainMenuOptions() {
@@ -33,4 +33,10 @@ public class buttonsController : MonoBehaviour {
 		clickButton ();
         Application.Quit();
 	}
+
+    public void mainMenuHighscores()
+    {
+        clickButton();
+        SceneManager.LoadScene("highscoresScene");
+    }
 }

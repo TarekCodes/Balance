@@ -125,7 +125,7 @@ GameObject:
   - 114: {fileID: 114000014244657250}
   - 114: {fileID: 114000012503940996}
   m_Layer: 5
-  m_Name: quit
+  m_Name: restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

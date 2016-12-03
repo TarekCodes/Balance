@@ -20,6 +20,14 @@ TagManager:
   - fruits
   - speedText
   - pauseMenu
+  - gate
+  - slider
+  - nameField
+  - initCanvas
+  - wall1
+  - wall2
+  - backboard
+  - rock
   layers:
   - Default
   - TransparentFX
