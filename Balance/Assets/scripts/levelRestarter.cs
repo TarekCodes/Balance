@@ -8,8 +8,13 @@ public class levelRestarter : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+<<<<<<< HEAD
 			restart ();
 		}
+=======
+            GameManager.instance.restartLevel();
+        }
+>>>>>>> origin/master
     }
 
 	public void restart() {

@@ -45,7 +45,8 @@ public class SceneController : MonoBehaviour
 
     void resumeGame()
     {
-        GameManager.instance.playMenuSelect();
+        if(paused)
+            GameManager.instance.playMenuSelect();
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         paused = false;
@@ -67,6 +68,7 @@ public class SceneController : MonoBehaviour
     public void restartLevel()
     {
         GameManager.instance.playMenuSelect();
+        GameManager.instance.setLevelScore(SceneManager.GetActiveScene().name, 0);  //reset level score
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
