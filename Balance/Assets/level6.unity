@@ -1001,6 +1001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d30cdb3488c5541b57b98a939d1342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  up: 9
+  down: 3.7
 --- !u!50 &496361330
 Rigidbody2D:
   serializedVersion: 2
@@ -1471,6 +1473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d30cdb3488c5541b57b98a939d1342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  up: 9
+  down: 3.7
 --- !u!50 &896480334
 Rigidbody2D:
   serializedVersion: 2

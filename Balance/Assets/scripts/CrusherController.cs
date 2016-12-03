@@ -3,9 +3,11 @@ using System.Collections;
 
 public class CrusherController : MonoBehaviour {
     Rigidbody2D rigid;
-    float speed = 8f;
-	// Use this for initialization
-	void Start () {
+    public float speed = 8f;
+    public float up;
+    public float down;
+    // Use this for initialization
+    void Start () {
         rigid = GetComponent<Rigidbody2D>();
         rigid.velocity = new Vector2(0,speed);
 	}
@@ -16,11 +18,11 @@ public class CrusherController : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate () {
-        if (transform.position.y > 9)
+        if (transform.position.y > up)
         {
             rigid.velocity = new Vector2(0, -speed);
         }
-        if (transform.position.y < 3.7f)
+        if (transform.position.y < down)
         {
             rigid.velocity = new Vector2(0, speed);
         }
