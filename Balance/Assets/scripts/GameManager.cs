@@ -9,18 +9,18 @@ public class GameManager : MonoBehaviour {
 	public AudioSource[] audioSources;
 	AudioSource background;
 	AudioSource menuSelect;
-    private int overallScore = 0;
-    private int level1Score = 0;
-    private int level2Score = 0;
-    private int level3Score = 0;
-    private int level4Score = 0;
-    private int level5Score = 0;
-    private int level6Score = 0;
+    public int overallScore = 0;
+    public int level1Score = 0;
+    public int level2Score = 0;
+    public int level3Score = 0;
+    public int level4Score = 0;
+    public int level5Score = 0;
+    public int level6Score = 0;
     private bool stopSaving = false;
     private static int MAX_SCORES = 10;
     public string scoreKey = "HighScore";
     public string nameKey = "HighScoreName";
-    private string playerName;
+    public string playerName;
     public GameObject enterYourName;
 
 

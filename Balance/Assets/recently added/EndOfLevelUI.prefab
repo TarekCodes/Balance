@@ -55,6 +55,7 @@ GameObject:
   - 224: {fileID: 224000013427992820}
   - 222: {fileID: 222000012091198498}
   - 114: {fileID: 114000010205919422}
+  - 114: {fileID: 114000012283867596}
   m_Layer: 5
   m_Name: EndOfLevelUI
   m_TagString: Untagged
@@ -351,6 +352,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text
+--- !u!114 &114000012283867596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010613598444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7ea20f8520f4348852134589495a90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000012744576030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -482,7 +494,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114000012744576030}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114000012283867596}
+        m_MethodName: Continue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &222000010089621546
