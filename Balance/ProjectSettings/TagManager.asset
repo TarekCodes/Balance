@@ -3,7 +3,29 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - infowindow
+  - endzone
+  - initCanvas
+  - soundHandler
+  - nameField
+  - ramp
+  - backboard
+  - scoreText
+  - platform
+  - speedText
+  - scoreZone
+  - pauseMenu
+  - wall2
+  - wall3
+  - wall1
+  - mountain
+  - rock
+  - powerUp
+  - gate
+  - slider
+  - fruits
+  - endGame
   layers:
   - Default
   - TransparentFX
@@ -52,4 +74,7 @@ TagManager:
     locked: 0
   - name: top
     uniqueID: 3378200107
+    locked: 0
+  - name: 
+    uniqueID: 3778544295
     locked: 0
