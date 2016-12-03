@@ -17,8 +17,12 @@ public class SwitchController : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
+            GameManager.instance.playMenuSelect();
             GameObject obj = GameObject.FindGameObjectWithTag("gate");
-            Destroy(obj);//.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -7f);
+            obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -7f);
+            obj.GetComponent<BoxCollider2D>().enabled = false;
+            print("hi");
+            //Destroy(obj);//
         }
     }
 }

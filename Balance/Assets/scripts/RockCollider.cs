@@ -3,7 +3,7 @@ using System.Collections;
 
 public class RockCollider : MonoBehaviour {
 
-    float initSpeed = 15f;
+    float initSpeed = .5f;
     float speed = 7f;
 	// Use this for initialization
 	void Start () {
@@ -12,7 +12,7 @@ public class RockCollider : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (GetComponent<Rigidbody2D>().velocity.x < initSpeed)
+        if (GetComponent<Rigidbody2D>().gravityScale == 0)
             GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
 
     }
@@ -21,6 +21,8 @@ public class RockCollider : MonoBehaviour {
     {
         if (coll.gameObject.tag != "mountain" && !coll.gameObject.CompareTag("platform"))
             Destroy(coll.gameObject);
+        if (coll.gameObject.tag == "platform")
+            GetComponent<Rigidbody2D>().gravityScale = 0;
 
     }
 }

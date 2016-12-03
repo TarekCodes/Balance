@@ -253,4 +253,10 @@ public class GameManager : MonoBehaviour {
         //    print(PlayerPrefs.GetString("HighScoreName" + i) + " " + PlayerPrefs.GetInt("HighScore" + i));
         //}
     }
+
+    public void restartLevel()
+    {
+        instance.setLevelScore(SceneManager.GetActiveScene().name, 0);  //reset level score
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
