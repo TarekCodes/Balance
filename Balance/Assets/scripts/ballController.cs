@@ -70,7 +70,7 @@ public class ballController : MonoBehaviour
         if (coll.gameObject.tag == "scoreZone")
         {
             swishSound.Play();
-            GameManager.instance.incrementLevelScore(SceneManager.GetActiveScene().name, 1);
+            GameManager.instance.incrementLevelScore(SceneManager.GetActiveScene().name, 3);
             scoreText.text = GameManager.instance.getLevelScore(SceneManager.GetActiveScene().name) + "";
         }
     }

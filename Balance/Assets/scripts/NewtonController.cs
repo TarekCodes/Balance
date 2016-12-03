@@ -5,15 +5,17 @@ using UnityEngine.UI;
 public class NewtonController : MonoBehaviour {
 
     Rigidbody2D rigid;
-    float speed = 7.0f;
+    float speed = 8.0f;
     bool left = false;
-    int score = 0;
     Text scoreText;
+    AudioSource jab;
+
 	// Use this for initialization
 	void Start () {
         if (rigid == null)
             rigid = GetComponent<Rigidbody2D>();
         scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
+        jab = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -44,9 +46,10 @@ public class NewtonController : MonoBehaviour {
     {
         if (other.tag == "apple")
         {
+            jab.Play();
             Destroy(other.gameObject);
-            score++;
-            scoreText.text = score + "";
+            GameManager.instance.incrementLevelScore("level4", 1);
+            scoreText.text = GameManager.instance.getLevelScore("level4") + "";
         }
     }
 

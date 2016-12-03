@@ -155,6 +155,32 @@ public class GameManager : MonoBehaviour {
         return 0;
     }
 
+    //set individual level scores
+    public void setLevelScore(string level, int n)
+    {
+        switch (level)
+        {
+            case "level1":
+                level1Score = n;
+                break;
+            case "level2":
+                level2Score = n;
+                break;
+            case "level3":
+                level3Score = n;
+                break;
+            case "level4":
+                level4Score = n;
+                break;
+            case "level5":
+                level5Score = n;
+                break;
+            case "level6":
+                level6Score = n;
+                break;
+        }
+    }
+
     public void changeVolume(float value)
     {
         foreach (AudioSource audioS in instance.audioSources)

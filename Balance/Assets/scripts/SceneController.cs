@@ -68,6 +68,7 @@ public class SceneController : MonoBehaviour
     public void restartLevel()
     {
         GameManager.instance.playMenuSelect();
+        GameManager.instance.setLevelScore(SceneManager.GetActiveScene().name, 0);  //reset level score
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
