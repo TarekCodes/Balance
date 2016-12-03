@@ -18,6 +18,9 @@ public class Display : MonoBehaviour {
 	}
 
 	void Continue() {
+        Time.timeScale = 1;
+        if (SceneManager.GetActiveScene().buildIndex == 11)
+            SceneManager.LoadScene("menuScene");
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
 	}
 
@@ -41,6 +44,7 @@ public class Display : MonoBehaviour {
 		else if(SceneManager.GetActiveScene().buildIndex == 11) {
 			scoreText.text = gameManager.level6Score.ToString();
 		}
+        GameManager.instance.calcTotalScore();
 		totalText.text = gameManager.overallScore.ToString();
 	}
 }

@@ -92,6 +92,7 @@ public class Ball_Controller_level3: MonoBehaviour
 		{
 			Destroy(other.gameObject);
 			score++;
+            GameManager.instance.incrementLevelScore("level3", 1);
 			scoreText.text = score + "";
 
 			speed = (float)speed + 0.1f;

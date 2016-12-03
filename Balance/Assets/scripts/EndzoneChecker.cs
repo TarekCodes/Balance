@@ -57,7 +57,6 @@ public class EndzoneChecker : MonoBehaviour {
 	void LevelComplete() {
 		gameManager.setLevelScore ("level2", 5);
 		if (!scoreUp) {
-			gameManager.incrementScore (5);
 			scoreUp = true;
 		}
 		completePopup.SetActive (true);

@@ -6,6 +6,28 @@ TagManager:
   tags:
   - endzone
   - timerText
+  - initCanvas
+  - soundHandler
+  - nameField
+  - ramp
+  - backboard
+  - scoreText
+  - platform
+  - speedText
+  - pauseMenu
+  - scoreZone
+  - mountain
+  - rock
+  - powerUp
+  - infowindow
+  - gate
+  - fruits
+  - endGame
+  - apple
+  - wall2
+  - wall3
+  - wall1
+  - highscores
   layers:
   - Default
   - TransparentFX

@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour {
     public int level5Score = 0;
     public int level6Score = 0;
     private bool stopSaving = false;
-    private static int MAX_SCORES = 10;
+    public static int MAX_SCORES = 10;
     public string scoreKey = "HighScore";
     public string nameKey = "HighScoreName";
     public string playerName;
@@ -254,9 +254,25 @@ public class GameManager : MonoBehaviour {
         //}
     }
 
+    public int getTotalScore()
+    {
+        overallScore = level1Score+ level2Score + level3Score + level4Score + level5Score + level6Score;
+        return overallScore;
+    }
+
+    public void calcTotalScore()
+    {
+        overallScore = level1Score + level2Score + level3Score + level4Score + level5Score + level6Score;
+    }
+
     public void restartLevel()
     {
         instance.setLevelScore(SceneManager.GetActiveScene().name, 0);  //reset level score
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void resetLevelScores()
+    {
+        level1Score = level2Score = level3Score = level4Score = level5Score = level6Score = 0;
     }
 }

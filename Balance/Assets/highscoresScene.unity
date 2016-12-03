@@ -217,6 +217,7 @@ GameObject:
   - 223: {fileID: 231558604}
   - 114: {fileID: 231558603}
   - 114: {fileID: 231558602}
+  - 114: {fileID: 231558606}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -277,7 +278,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_SortingLayerID: 82271457
+  m_SortingLayerID: -916767189
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &231558605
@@ -301,6 +302,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &231558606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 231558601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8083bbcfdec5e045a67a1f9416dc94b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &401327445
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +432,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_SizeDelta: {x: 0, y: 501}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &627630942
 GameObject:
@@ -458,7 +470,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -34}
+  m_AnchoredPosition: {x: 0, y: -18}
   m_SizeDelta: {x: 636, y: 258}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &627630944
@@ -572,7 +584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -580,10 +592,10 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7cb2912222469634ba17a77055919ea8, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -675,7 +687,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 854874333}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.80333334
+  m_Size: 0.4810379
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -817,7 +829,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -297, y: 170}
+  m_AnchoredPosition: {x: 0, y: -193}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &961255106
@@ -884,7 +896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.75, g: 0.75, b: 0.75, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -948,7 +960,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1771835859
+  m_SortingLayerID: -366014691
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f4c6bbb6c07258d42a19a63606405623, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1189,7 +1201,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 170}
+  m_AnchoredPosition: {x: 0, y: 180}
   m_SizeDelta: {x: 368, y: 74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588652808
@@ -1243,7 +1255,7 @@ GameObject:
   - 114: {fileID: 1648840984}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: highscores
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1263,8 +1275,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 118.5}
-  m_SizeDelta: {x: 619, y: 63}
+  m_AnchoredPosition: {x: 0, y: 134}
+  m_SizeDelta: {x: 619, y: 232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648840984
 MonoBehaviour:
@@ -1291,14 +1303,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 3
+    m_MaxSize: 300
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "TAREK\t\t\t\t\t\t\t\t\t20"
+  m_Text: 
 --- !u!222 &1648840985
 CanvasRenderer:
   m_ObjectHideFlags: 0

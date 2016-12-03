@@ -8,12 +8,16 @@ public class Level5Controller : MonoBehaviour {
     GameObject wall2;
     GameObject wall3;
     Text scoreText;
-	// Use this for initialization
-	void Start () {
+    GameObject completePopup;
+
+    // Use this for initialization
+    void Start () {
         wall1 = GameObject.FindGameObjectWithTag("wall1");
         wall2 = GameObject.FindGameObjectWithTag("wall2");
         wall3 = GameObject.FindGameObjectWithTag("wall3");
         scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
+        completePopup = GameObject.Find("LevelCompletePopup");
+        completePopup.SetActive(false);
         if (GameManager.instance.getLevelScore("level5") < 5)
         {
             wall1.SetActive(false);
@@ -39,6 +43,9 @@ public class Level5Controller : MonoBehaviour {
 	void Update () {
         scoreText.text = "SCORE: " + GameManager.instance.getLevelScore("level5");
         if (GameManager.instance.getLevelScore("level5") >= 20)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-	}
+        {
+            Time.timeScale = 0;
+            completePopup.SetActive(true);
+        }
+    }
 }

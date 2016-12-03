@@ -15,6 +15,7 @@ public class ballController : MonoBehaviour
     Text velocityText;
     AudioSource swishSound;
     AudioSource backboard;
+    GameObject completePopup;
 
     // Use this for initialization
     void Start()
@@ -26,6 +27,8 @@ public class ballController : MonoBehaviour
         scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
         velocityText = GameObject.FindGameObjectWithTag("speedText").GetComponent<Text>();
         scoreText.text = GameManager.instance.getLevelScore(SceneManager.GetActiveScene().name) + "";
+        completePopup = GameObject.Find("LevelCompletePopup");
+        completePopup.SetActive(false);
     }
 
     // Update is called once per frame
@@ -47,12 +50,15 @@ public class ballController : MonoBehaviour
         }
         if (rigid.velocity.x > 5)
             speed = 25.0f;
-        velocityText.text = ((int)(rigid.velocity.magnitude * 2.237))+ "";
+        velocityText.text = ((int)(rigid.velocity.magnitude * 2.237)) + "";
         if (GameManager.instance.getLevelScore(SceneManager.GetActiveScene().name) > 9)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        {
+            Time.timeScale = 0;
+            completePopup.SetActive(true);
+        }
     }
 
-    void OnCollisionExit2D(Collision2D coll)
+        void OnCollisionExit2D(Collision2D coll)
     {
         if (coll.gameObject.tag == "ramp")
             isGrounded = false;

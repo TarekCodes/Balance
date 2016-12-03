@@ -54,19 +54,6 @@ public class SceneController : MonoBehaviour
         paused = false;
     }
 
-
-    IEnumerator nextLevel(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene((levelIndex + 1) % 5);
-    }
-
-    IEnumerator restartLevel(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(levelIndex);
-    }
-
     public void restartLevel()
     {
         GameManager.instance.playMenuSelect();
@@ -76,6 +63,8 @@ public class SceneController : MonoBehaviour
 
     public void goToMenu()
     {
+        GameManager.instance.calcTotalScore();
+        GameManager.instance.saveScore();
         Time.timeScale = 1;
         GameManager.instance.playMenuSelect();
         SceneManager.LoadScene("menuScene");
@@ -84,7 +73,7 @@ public class SceneController : MonoBehaviour
     public void quitGame()
     {
         GameManager.instance.playMenuSelect();
-        Application.Quit();
+        SceneManager.LoadScene("savingScene");
     }
 
     public void muteVolume(bool check)

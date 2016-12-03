@@ -6,6 +6,8 @@ public class SaveAndQuit : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        GameManager.instance.calcTotalScore();
+        GameManager.instance.saveScore();
         StartCoroutine(quitAfter(2f));
     }
 

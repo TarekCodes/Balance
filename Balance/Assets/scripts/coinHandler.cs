@@ -42,7 +42,6 @@ public class coinHandler : MonoBehaviour {
                     GameManager.instance.incrementLevelScore(currentLevelName, 1);
                     break;
             }
-            print(GameManager.instance.getLevelScore(currentLevelName));
             GetComponent<SpriteRenderer>().enabled = false;
             Destroy(this.gameObject,1);
         }

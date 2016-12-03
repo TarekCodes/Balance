@@ -180,11 +180,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 109570902}
+      objectReference: {fileID: 485056460}
     - target: {fileID: 114000012503940996, guid: 969fdfe51186429499231b74a6dc99d7,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: restart
+      value: restartLevel
       objectReference: {fileID: 0}
     - target: {fileID: 114000012503940996, guid: 969fdfe51186429499231b74a6dc99d7,
         type: 2}
@@ -801,7 +801,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_SortingLayerID: 82271457
+  m_SortingLayerID: -916767189
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &485056459
@@ -1394,7 +1394,7 @@ Prefab:
     - target: {fileID: 212000010249675082, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
         type: 2}
       propertyPath: m_SortingLayerID
-      value: 82271457
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000011412523270, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
         type: 2}

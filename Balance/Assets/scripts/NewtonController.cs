@@ -9,6 +9,7 @@ public class NewtonController : MonoBehaviour {
     bool left = false;
     Text scoreText;
     AudioSource jab;
+    GameObject completePopup;
 
 	// Use this for initialization
 	void Start () {
@@ -16,11 +17,16 @@ public class NewtonController : MonoBehaviour {
             rigid = GetComponent<Rigidbody2D>();
         scoreText = GameObject.FindGameObjectWithTag("scoreText").GetComponent<Text>();
         jab = GetComponent<AudioSource>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+        completePopup = GameObject.Find("LevelCompletePopup");
+        completePopup.SetActive(false);
+    }
+
+    // Update is called once per frame
+    void Update () {
+        if (GameManager.instance.getLevelScore("level4") > 20){
+            Time.timeScale = 0;
+            completePopup.SetActive(true);
+        }
 	}
 
     void FixedUpdate()
