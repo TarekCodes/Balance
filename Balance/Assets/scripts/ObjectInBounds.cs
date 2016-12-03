@@ -10,7 +10,7 @@ public class ObjectInBounds : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (transform.position.y < -11)
+        if (transform.position.y < -8.5)
             Destroy(this.gameObject);
 	}
 }

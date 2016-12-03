@@ -28,6 +28,7 @@ TagManager:
   - wall2
   - backboard
   - rock
+  - wall3
   layers:
   - Default
   - TransparentFX

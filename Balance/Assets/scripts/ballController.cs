@@ -48,7 +48,7 @@ public class ballController : MonoBehaviour
         if (rigid.velocity.x > 5)
             speed = 25.0f;
         velocityText.text = ((int)(rigid.velocity.magnitude * 2.237))+ "";
-        if (GameManager.instance.getLevelScore(SceneManager.GetActiveScene().name) == 4)
+        if (GameManager.instance.getLevelScore(SceneManager.GetActiveScene().name) > 9)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
