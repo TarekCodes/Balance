@@ -3,36 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
-  tags:
-  - scoreText
-  - newgame
-  - soundHandler
-  - platform
-  - scoreZone
-  - ramp
-  - endGame
-  - endzone
-  - apple
-  - mountain
-  - whenPaused
-  - whenResumed
-  - powerUp
-  - fruits
-  - speedText
-  - pauseMenu
-  - gate
-  - slider
-  - nameField
-  - initCanvas
-  - wall1
-  - wall2
-  - backboard
-  - rock
-  - wall3
-=======
   tags: []
->>>>>>> eda7390fc9eae79807883be4dcb8222732fb12f4
   layers:
   - Default
   - TransparentFX
