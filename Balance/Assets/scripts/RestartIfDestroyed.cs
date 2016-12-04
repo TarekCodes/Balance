@@ -12,8 +12,8 @@ public class RestartIfDestroyed : MonoBehaviour {
 	
 	}
 
-    void OnDestroy()
-    {
-        GameManager.instance.restartLevel();
-    }
+    //void OnDestroy()
+    //{
+    //    GameManager.instance.restartLevel();
+    //}
 }

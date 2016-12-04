@@ -16,11 +16,12 @@ public class EndLine : MonoBehaviour {
 	
 	}
 
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             GameManager.instance.incrementLevelScore(SceneManager.GetActiveScene().name, 5);
+            GetComponent<BoxCollider2D>().enabled = false;
             completePopup.SetActive(true);
             Time.timeScale = 0;
         }

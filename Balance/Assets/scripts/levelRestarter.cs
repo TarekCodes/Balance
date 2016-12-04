@@ -6,7 +6,7 @@ public class levelRestarter : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "Player") {
-			GameManager.instance.restartLevel ();
+            GameManager.instance.restartLevel ();
 		}    
 	}
 }

@@ -20,8 +20,12 @@ public class Display : MonoBehaviour {
 	void Continue() {
         Time.timeScale = 1;
         if (SceneManager.GetActiveScene().buildIndex == 11)
-            SceneManager.LoadScene("menuScene");
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+        {
+            GameManager.instance.saveScore();
+            SceneManager.LoadScene("chooseLevel");
+        }
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 
 	void Update() {

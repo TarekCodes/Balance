@@ -12,8 +12,7 @@ public class coinHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -42,6 +41,7 @@ public class coinHandler : MonoBehaviour {
                     GameManager.instance.incrementLevelScore(currentLevelName, 1);
                     break;
             }
+            GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
             Destroy(this.gameObject,1);
         }

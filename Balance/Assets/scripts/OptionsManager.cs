@@ -6,14 +6,19 @@ using UnityEngine.SceneManagement;
 public class OptionsManager : MonoBehaviour {
 
     Slider soundSlider;
-	// Use this for initialization
-	void Start () {
+    InputField nameField;
+    public GameObject enterYourName;
+    // Use this for initialization
+    void Start () {
         soundSlider = GameObject.FindGameObjectWithTag("slider").GetComponent<Slider>();
         soundSlider.value = GameManager.instance.getVolume();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        nameField = GameObject.FindGameObjectWithTag("nameField").GetComponent<InputField>();
+        nameField.text = GameManager.instance.playerName;
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 	
 	}
 
@@ -25,6 +30,15 @@ public class OptionsManager : MonoBehaviour {
     public void backToMenu()
     {
         GameManager.instance.playMenuSelect();
-        SceneManager.LoadScene("menuScene");
+        if (nameField.text == "")
+        {
+            Object obj = Instantiate(enterYourName, GameObject.FindGameObjectWithTag("initCanvas").GetComponent<Transform>(), false);
+            Destroy(obj, 2);
+        }
+        else
+        {
+            GameManager.instance.playerName = nameField.text;
+            SceneManager.LoadScene("menuScene");
+        }
     }
 }
