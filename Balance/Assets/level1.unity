@@ -1511,6 +1511,21 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011083769830, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Text
+      value: "Acceleration is the measurement of change in an object's velocity (speed).
+        When you press down on the gas pedal in a car, the car surges forward going
+        faster and faster. This change in velocity is acceleration.\r The faster an
+        object goes from one speed to another, the higher its acceleration. In this
+        level you need to control the acceleration of a ball to get it to the right
+        velocity (speed) in order to score a point!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011412523270, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Text
+      value: Acceleration
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
   m_IsPrefabParent: 0

@@ -3803,6 +3803,20 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011412523270, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Text
+      value: Momentum
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011083769830, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Text
+      value: Momentum is the amount of force it takes to slow something down. Momentum
+        = Mass X Velocity so the faster the object and bigger the mass, the higher
+        the momentum of that object is going to be. In this level, a huge rock is
+        rolling down a mountain quickly and no amount of force is going to stop it
+        so you need to RUN!! space- jump, ctrl- crouch, arrows- move.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
   m_IsPrefabParent: 0

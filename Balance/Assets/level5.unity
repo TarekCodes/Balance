@@ -2720,6 +2720,57 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: startGame
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011412523270, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Text
+      value: Potential Energy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011083769830, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Text
+      value: How an object is positioned can result in having a certain amount of
+        potential energy. Potential energy is an object's ability to do work or do
+        something at one point in the future. You can posiiton a rubber band to have
+        potential energy if you pull it back and when you release, that energy is
+        going to be released launching it in some direction. In this level, you have
+        a slingshot that can be pulled to accumulate potential energy then released
+        to launch the rock attached to it (do work). TRY TO HIT THE TARGET!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011083769830, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.2647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011083769830, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.045638956
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011083769830, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011012055600, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011012055600, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 221.668
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011012055600, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.013
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011012055600, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 529.469
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
   m_IsPrefabParent: 0

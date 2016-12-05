@@ -12,7 +12,7 @@ public class DisplayHighscores : MonoBehaviour {
         {
             if (PlayerPrefs.HasKey((curScore + i)))
             {
-                GameObject.FindGameObjectWithTag("highscores").GetComponent<Text>().text += PlayerPrefs.GetString(curName + i) + "\t\t\t\t" + PlayerPrefs.GetInt(curScore + i) + "\n";
+                GameObject.FindGameObjectWithTag("highscores").GetComponent<Text>().text += PlayerPrefs.GetString(curName + i) + "\t\t\t\t\t\t\t" + PlayerPrefs.GetInt(curScore + i) + "\n";
             }
             else
                 break;

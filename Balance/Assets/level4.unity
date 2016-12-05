@@ -585,6 +585,22 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011412523270, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Text
+      value: Gravity
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011083769830, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_Text
+      value: Gravity is a force of attraction between two objects. The first object
+        in this case is earth itself, and the second is everyone on top of it. Everything
+        that goes up must come down because it's being attracted down to the ground
+        by the force of gravity. Sir Isaac Newton discovered gravity and the legend
+        is that he did so when he saw a falling apple while thinking about the forces
+        of nature. In this level you need to collect as many falling apples due to
+        gravity as you can.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
   m_IsPrefabParent: 0

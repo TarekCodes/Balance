@@ -1349,11 +1349,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -22
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1381,11 +1381,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
       propertyPath: m_LocalScale.x
-      value: 183.73637
+      value: 142.31648
       objectReference: {fileID: 0}
     - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
       propertyPath: m_LocalScale.y
-      value: 183.73637
+      value: 209.63747
       objectReference: {fileID: 0}
     - target: {fileID: 4000013864421308, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
       propertyPath: m_LocalScale.z
@@ -1424,6 +1424,16 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: startGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011012055600, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011012055600, guid: 874bc002dd2927f4e9b7fc0c565e3a29,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 221.333
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 874bc002dd2927f4e9b7fc0c565e3a29, type: 2}
