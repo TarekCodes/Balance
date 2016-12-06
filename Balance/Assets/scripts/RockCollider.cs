@@ -3,8 +3,8 @@ using System.Collections;
 
 public class RockCollider : MonoBehaviour {
 
-    float initSpeed = .5f;
-    float speed = 7f;
+    float initSpeed = 0f;
+    float speed = 7.2f;
 	// Use this for initialization
 	void Start () {
         GetComponent<Rigidbody2D>().velocity = new Vector2(initSpeed, 0);
