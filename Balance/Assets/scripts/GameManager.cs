@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
     public string nameKey = "HighScoreName";
     public string playerName;
     public GameObject enterYourName;
+    public int[] repeats = new int[6];
 
 
     // Use this for initialization
@@ -274,5 +275,50 @@ public class GameManager : MonoBehaviour {
     public void resetLevelScores()
     {
         level1Score = level2Score = level3Score = level4Score = level5Score = level6Score = 0;
+    }
+
+    public void addRepeat(string level)
+    {
+        switch (level)
+        {
+            case "level1":
+                repeats[0]++;
+                break;
+            case "level2":
+                repeats[1]++;
+                break;
+            case "level3":
+                repeats[2]++;
+                break;
+            case "level4":
+                repeats[3]++;
+                break;
+            case "level5":
+                repeats[4]++;
+                break;
+            case "level6":
+                repeats[5]++;
+                break;
+        }
+    }
+
+    public int getRepeat(string level)
+    {
+        switch (level)
+        {
+            case "level1":
+                return repeats[0];
+            case "level2":
+                return repeats[1];
+            case "level3":
+                return repeats[2];
+            case "level4":
+                return repeats[3];
+            case "level5":
+                return repeats[4];
+            case "level6":
+                return repeats[5];
+        }
+        return 0;
     }
 }

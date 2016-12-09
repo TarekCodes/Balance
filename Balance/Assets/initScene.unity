@@ -510,6 +510,7 @@ MonoBehaviour:
   playerName: 
   enterYourName: {fileID: 1000011113568420, guid: 17a61bed54805b741bcda598d100c8b9,
     type: 2}
+  repeats: 000000000000000000000000000000000000000000000000
 --- !u!82 &685021780
 AudioSource:
   m_ObjectHideFlags: 0
