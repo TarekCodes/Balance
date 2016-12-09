@@ -1,5 +1,10 @@
-# Balance
-Group Project
+
+<p align="center">
+  <img src="Balance/Assets/sprites/logo.png" alt="logo"/>
+<p>
+</p>
+  Group Project
+</p>
 
 # Contributors 
   <ul>
