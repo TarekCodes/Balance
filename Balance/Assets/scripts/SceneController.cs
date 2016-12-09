@@ -1,36 +1,41 @@
-﻿    using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class SceneController : MonoBehaviour
 {
-
+    GameObject infoWindow;
+    GameObject endWindow;
     bool paused = false;
     GameObject pauseMenu;
     Text levelNo;
     GameObject enemy;
     GameObject player;
-    int levelIndex;
     private float tempVolume;
 
 
     void Start()
     {
         pauseMenu = GameObject.FindGameObjectWithTag("pauseMenu");
-        levelIndex = SceneManager.GetActiveScene().buildIndex;
+        infoWindow = GameObject.FindGameObjectWithTag("infowindow");
+        endWindow = GameObject.Find("LevelCompletePopup");
         resumeGame();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !paused)
+        endWindow = GameObject.Find("LevelCompletePopup");
+        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P)) && !paused && (endWindow == null || !endWindow.activeSelf) && !infoWindow.activeSelf)
         {
+            
             showMenu();
         }
         else
-            if (Input.GetKeyDown(KeyCode.Escape) && paused)
         {
-            resumeGame();
+            if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P)) && paused && (endWindow == null || !endWindow.activeSelf) && !infoWindow.activeSelf)
+            {
+                resumeGame();
+            }
         }
     }
 

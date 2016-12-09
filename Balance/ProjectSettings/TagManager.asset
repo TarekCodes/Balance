@@ -28,6 +28,8 @@ TagManager:
   - wall3
   - wall1
   - highscores
+  - Canvas
+  - endwindow
   layers:
   - Default
   - TransparentFX
