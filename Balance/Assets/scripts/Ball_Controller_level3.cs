@@ -96,6 +96,7 @@ public class Ball_Controller_level3: MonoBehaviour
 			scoreText.text = score + "";
 
 			speed = (float)speed + 0.1f;
+            speed = Mathf.Round(speed * 100f) / 100f;
 			speedText.text = (float)speed + "";
 		}
 	}
